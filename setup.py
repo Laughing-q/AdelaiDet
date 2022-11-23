@@ -87,6 +87,6 @@ setup(
         "editdistance"
     ],
     extras_require={"all": ["psutil"]},
-    ext_modules=get_extensions(),
-    cmdclass={"build_ext": torch.utils.cpp_extension.BuildExtension},
+    # ext_modules=get_extensions(),
+    cmdclass={"build_ext": torch.utils.cpp_extension.BuildExtension.with_options(use_ninja=False)},
 )

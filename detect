@@ -1,0 +1,6 @@
+#!/bin/bash
+
+python demo/demo.py \
+    --config-file configs/SOLOv2/R50_3x.yaml \
+    --input /d/dataset/COCO/images/val2017/* \
+    --opts MODEL.WEIGHTS weights/SOLOv2_R50_3x.pth

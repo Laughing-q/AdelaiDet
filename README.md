@@ -1,3 +1,6 @@
+This fork is for SOLOv2-speed test. (SOLOv2-only)
+
+
 <div align="center">
     <img src="docs/adel-logo.svg" width="160" >
 </div>

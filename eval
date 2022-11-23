@@ -1,0 +1,19 @@
+#!/bin/bash
+
+python tools/train_net.py \
+    --config-file configs/SOLOv2/R50_3x.yaml \
+    --eval-only \
+    --num-gpus 1 \
+    OUTPUT_DIR output \
+    MODEL.WEIGHTS ./weights/SOLOv2_R50_3x.pth\
+    # INPUT.MIN_SIZE_TEST 640\
+    # INPUT.MAX_SIZE_TEST 640\
+    
+# python tools/train_net.py \
+#     --config-file configs/SOLOv2/R101_3x.yaml \
+#     --eval-only \
+#     --num-gpus 1 \
+#     OUTPUT_DIR output \
+#     MODEL.WEIGHTS ./weights/SOLOv2_R101_3x.pth\
+#     INPUT.MIN_SIZE_TEST 640\
+    # INPUT.MAX_SIZE_TEST 640\
